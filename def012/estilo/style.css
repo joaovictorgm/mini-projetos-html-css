@@ -1,13 +1,38 @@
 @charset "UTF-8";
 
-*{
+@font-face {
+    font-family: 'Fuzzy Bubbles';
+    src: url('../fontes/FuzzyBubbles-Bold.ttf') format('Truetype');
+    font-weight: bolder;
+}
+
+
+@font-face {
+    font-family:'Smooch';
+    src: url('../fontes/Smooch-Regular.ttf') format('Truetype');
+    font-weight: normal;
+}
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Fuzzy Bubbles', 'cursive';
+    --fonte3: 'Smooch', 'cursive';
+    
+}
+* {
     margin: 0px;
     padding: 0px;
+    
 }
+  
 
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
+    
+   
+    
 }
 header{
     background-color: rgb(37, 36, 36);
@@ -20,9 +45,12 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family:var(--fonte2);
+    font-size: 5vw;
 }
 header > p{
     padding-bottom: 50px;
+    
 }
 
 header a, footer a{
@@ -41,16 +69,24 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-}
+    font-family: var(--fonte3);
+    padding: 10px;
+    font-size: 3vw;
 
+}
 section.normal{
     background-color:whitesmoke;
     color: rgb(0, 0, 0);
+    
+    
+    
 }
 
 section.imagem{
     background-color: rgb(37, 36, 36);
     color: whitesmoke;
+    
+    
 
 }
 
@@ -65,4 +101,7 @@ footer{
 
 footer > p{
     color: whitesmoke;
-    text-align: center;
+    text-align:center;
+   
+    
+}
